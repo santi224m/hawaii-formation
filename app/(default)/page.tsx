@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Creative',
-  description: 'Page description',
+  title: 'Hawaii',
+  description: 'Formation of the Hawaiian Islands',
 }
 
 import Hero from '@/components/hero'

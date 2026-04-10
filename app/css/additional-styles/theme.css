@@ -147,3 +147,7 @@
 .swiper-pagination-bullet-active {
     @apply bg-blue-400;
 }
+
+.text-blue-500 {
+    color: #2e7d32;
+}
