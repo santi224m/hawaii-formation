@@ -152,7 +152,7 @@ export default function Header({ nav = true }: {
                 <li>
                   <Link
                     className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                    href="#"
+                    href="#home"
                   >
                     Home
                   </Link>
@@ -170,7 +170,7 @@ export default function Header({ nav = true }: {
                     className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     href="#island-chain-formation"
                   >
-                    How The Island Chain Formed
+                    How The Chain Formed
                   </Link>
                 </li>
                 <li>
@@ -186,7 +186,23 @@ export default function Header({ nav = true }: {
                     className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                     href="#loihi"
                   >
-                    Lō'ihi: The Island Being Born
+                    Lō'ihi
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    href="#fun-facts"
+                  >
+                    Fun Facts
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    href="#lava-and-rock"
+                  >
+                    Types of Lava & Rock
                   </Link>
                 </li>
               </ul>

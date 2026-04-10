@@ -4,7 +4,7 @@ import HeroImage from '@/public/images/hero-image.png'
 
 export default function Hero() {
   return (
-    <section className="relative">
+    <section id='home' className="relative">
       {/* Bg */}
       <div className="absolute inset-0 rounded-bl-[100px] bg-gray-50 pointer-events-none -z-10" aria-hidden="true" />
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

@@ -4,15 +4,12 @@ export const metadata = {
 }
 
 import Hero from '@/components/hero'
-import Inspiration from '@/components/inspiration'
 import IslandChainFormation from '@/components/island-chain-formation'
-import Pricing from '@/components/pricing'
-import Testimonials from '@/components/testimonials'
-import Faqs from '@/components/faqs'
-import Cta from '@/components/cta'
+import FunFacts from '@/components/fun-facts'
 import HotSpots from '@/components/hotspots'
 import IslandSpotlights from '@/components/island-spotlights'
 import Loihi from '@/components/loihi'
+import LavaAndRock from '@/components/lava-rock'
 
 export default function Home() {
   return (
@@ -22,11 +19,8 @@ export default function Home() {
       <IslandChainFormation />
       <IslandSpotlights />
       <Loihi />
-      <Pricing />
-      <Testimonials />
-      <Faqs />
-      <Inspiration />
-      <Cta />
+      <LavaAndRock />
+      <FunFacts />
     </>
   )
 }
