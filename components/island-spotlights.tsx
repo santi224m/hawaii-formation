@@ -4,13 +4,13 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const statusColors = {
-  all:     { bg: 'bg-gray-100',    activeBg: 'bg-gray-100',   border: 'border-gray-300',   dot: 'bg-gray-400',    text: 'text-gray-700'  },
-  active:  { bg: 'bg-red-50',     activeBg: 'bg-red-100',    border: 'border-red-300',    dot: 'bg-red-400',     text: 'text-red-600'   },
-  dormant: { bg: 'bg-amber-50',   activeBg: 'bg-amber-100',  border: 'border-amber-300',  dot: 'bg-amber-400',   text: 'text-amber-600' },
-  extinct: { bg: 'bg-gray-100',   activeBg: 'bg-gray-200',   border: 'border-gray-300',   dot: 'bg-gray-400',    text: 'text-gray-500'  },
+  all: { bg: 'bg-gray-100', activeBg: 'bg-gray-100', border: 'border-gray-300', dot: 'bg-gray-400', text: 'text-gray-700' },
+  active: { bg: 'bg-red-50', activeBg: 'bg-red-100', border: 'border-red-300', dot: 'bg-red-400', text: 'text-red-600' },
+  dormant: { bg: 'bg-amber-50', activeBg: 'bg-amber-100', border: 'border-amber-300', dot: 'bg-amber-400', text: 'text-amber-600' },
+  extinct: { bg: 'bg-gray-100', activeBg: 'bg-gray-200', border: 'border-gray-300', dot: 'bg-gray-400', text: 'text-gray-500' },
 }
 
-const islands = [
+const islands: Island[] = [
   {
     id: 'big-island',
     name: "Hawai'i (Big Island)",
@@ -101,14 +101,32 @@ const islands = [
   },
 ]
 
-const filters = [
-  { key: 'all',     label: 'All Islands',  count: islands.length },
-  { key: 'active',  label: 'Active',       count: islands.filter(i => i.status === 'active').length  },
-  { key: 'dormant', label: 'Dormant',      count: islands.filter(i => i.status === 'dormant').length },
-  { key: 'extinct', label: 'Extinct',      count: islands.filter(i => i.status === 'extinct').length },
+type FilterKey = 'all' | 'active' | 'dormant' | 'extinct'
+
+const filters: { key: FilterKey; label: string; count: number }[] = [
+  { key: 'all', label: 'All Islands', count: islands.length },
+  { key: 'active', label: 'Active', count: islands.filter(i => i.status === 'active').length },
+  { key: 'dormant', label: 'Dormant', count: islands.filter(i => i.status === 'dormant').length },
+  { key: 'extinct', label: 'Extinct', count: islands.filter(i => i.status === 'extinct').length },
 ]
 
-function IslandCard({ island }) {
+type Island = {
+  id: string
+  name: string
+  nickname: string
+  age: string
+  area: string
+  highestPeak: string
+  status: 'active' | 'dormant' | 'extinct'
+  volcanoes: string[]
+  image: string | null
+}
+
+type Props = {
+  island: Island
+}
+
+function IslandCard({ island }: Props) {
   const status = statusColors[island.status]
 
   return (
@@ -179,7 +197,7 @@ function IslandCard({ island }) {
 }
 
 export default function IslandSpotlights() {
-  const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState<FilterKey>('all')
 
   const filtered = filter === 'all' ? islands : islands.filter(i => i.status === filter)
 
