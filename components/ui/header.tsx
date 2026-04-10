@@ -181,6 +181,14 @@ export default function Header({ nav = true }: {
                     Island Spotlights
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    href="#loihi"
+                  >
+                    Lō'ihi: The Island Being Born
+                  </Link>
+                </li>
               </ul>
             </nav>
           }

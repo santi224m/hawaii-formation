@@ -12,6 +12,7 @@ import Faqs from '@/components/faqs'
 import Cta from '@/components/cta'
 import HotSpots from '@/components/hotspots'
 import IslandSpotlights from '@/components/island-spotlights'
+import Loihi from '@/components/loihi'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <HotSpots />
       <IslandChainFormation />
       <IslandSpotlights />
+      <Loihi />
       <Pricing />
       <Testimonials />
       <Faqs />
