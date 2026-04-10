@@ -1,29 +1,29 @@
 export const metadata = {
-  title: 'Hawaii',
+  title: 'Hawaiian Islands Formation',
   description: 'Formation of the Hawaiian Islands',
 }
 
 import Hero from '@/components/hero'
 import Inspiration from '@/components/inspiration'
-import Carousel from '@/components/carousel'
-import Creatives from '@/components/creatives'
+import IslandChainFormation from '@/components/island-chain-formation'
 import Pricing from '@/components/pricing'
 import Testimonials from '@/components/testimonials'
 import Faqs from '@/components/faqs'
-import Blog from '@/components/blog'
 import Cta from '@/components/cta'
+import HotSpots from '@/components/hotspots'
+import IslandSpotlights from '@/components/island-spotlights'
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <Inspiration />
-      <Carousel />
-      <Creatives />
+      <HotSpots />
+      <IslandChainFormation />
+      <IslandSpotlights />
       <Pricing />
       <Testimonials />
       <Faqs />
-      <Blog />
+      <Inspiration />
       <Cta />
     </>
   )

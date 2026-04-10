@@ -18,8 +18,8 @@ export default function Header({ nav = true }: {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path id="path1"
-        fill="#2e7d32" stroke="#2e7d32" strokeWidth="1"
-        d="M 7.62,31.95
+                  fill="#2e7d32" stroke="#2e7d32" strokeWidth="1"
+                  d="M 7.62,31.95
            C 6.66,31.91 6.66,31.91 6.42,31.36
              6.30,31.10 6.11,30.77 5.99,30.64
              5.77,30.38 5.77,30.21 5.99,30.14
@@ -155,6 +155,30 @@ export default function Header({ nav = true }: {
                     href="#"
                   >
                     Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    href="#hot-spots"
+                  >
+                    Volcanic Hot Spots
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    href="#island-chain-formation"
+                  >
+                    How The Island Chain Formed
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="font-medium text-gray-600 decoration-blue-500 decoration-2 underline-offset-2 hover:underline px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                    href="#island-spotlights"
+                  >
+                    Island Spotlights
                   </Link>
                 </li>
               </ul>

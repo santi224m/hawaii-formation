@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import HeroImage from '@/public/images/hero-image.png'
 
@@ -50,8 +49,8 @@ export default function Hero() {
                   />
                 </svg>
                 <div>
-                  <div className="font-cabinet-grotesk text-2xl font-extrabold">6M</div>
-                  <div className="text-gray-500">Years</div>
+                  <div className="font-cabinet-grotesk text-2xl font-extrabold">137</div>
+                  <div className="text-gray-500">Total Islands</div>
                 </div>
                 <svg className="fill-gray-300" width="14" height="10" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -60,8 +59,8 @@ export default function Hero() {
                   />
                 </svg>
                 <div>
-                  <div className="font-cabinet-grotesk text-2xl font-extrabold">1.4M+</div>
-                  <div className="text-gray-500">Population</div>
+                  <div className="font-cabinet-grotesk text-2xl font-extrabold">28M</div>
+                  <div className="text-gray-500">Years</div>
                 </div>
               </div>
             </div>
@@ -71,7 +70,14 @@ export default function Hero() {
               data-aos="fade-left"
               data-aos-duration="1100"
             >
-              <Image src={HeroImage} className="md:max-w-none" width="584" height="659" priority alt="Hero Illustration" />
+              <Image
+                unoptimized
+                src="https://placehold.co/600x900?text=Hawaii+Islands+Collage"
+                alt="Volcanic hot spot diagram placeholder"
+                width={600}
+                height={900}
+                className="rounded-lg w-full"
+              />
             </div>
           </div>
         </div>

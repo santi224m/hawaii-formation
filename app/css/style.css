@@ -76,3 +76,7 @@
 @utility rtl {
   direction: rtl;
 }
+
+html {
+  scroll-behavior: smooth;
+}
